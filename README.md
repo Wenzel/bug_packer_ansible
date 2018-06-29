@@ -8,7 +8,7 @@
 
     virtualenv venv
     source venv/bin/activate
-    (venv) pip install ansible
+    (venv) pip install ansible==2.6.0 pywinrm
     (venv) ./packer build windows_10.json
 
 ## output
