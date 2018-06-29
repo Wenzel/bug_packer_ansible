@@ -3,3 +3,5 @@ venv/
 packer
 packer_cache
 *.retry
+ansible/hosts
+output-qemu
