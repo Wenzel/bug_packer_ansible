@@ -35,11 +35,11 @@
     "provisioners": [
         {
             "type": "ansible",
-            "playbook_file": "ansible/default.yml",
+            "playbook_file": "ansible/site.yml",
             "extra_arguments": [
                 "--connection=packer",
                 "--extra-vars", "ansible_shell_type=powershell ansible_shell_executable=None",
-                "-vvv"
+                "-v"
             ]
         }
     ],
