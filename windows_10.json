@@ -12,6 +12,7 @@
             "net_device": "e1000",
             "format": "qcow2",
             "headless": true,
+            "http_directory": "scripts",
             "qemuargs": [
                 ["-smp", "2"],
                 ["-m", "4096M"]
