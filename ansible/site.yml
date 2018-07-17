@@ -3,3 +3,11 @@
   tasks:
     - name: ping
       win_ping:
+
+    - name: display packer_build_name
+      debug:
+        msg: "build name {{ packer_build_name }}"
+
+    - name: display packer_http_addr
+      debug:
+        msg: "http://{{ packer_http_addr }}"
