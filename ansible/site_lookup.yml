@@ -1,0 +1,13 @@
+---
+- hosts: all
+  tasks:
+    - name: ping
+      win_ping:
+
+    - name: display PACKER_BUILD_NAME
+      debug:
+        msg: "build {{ lookup('env', 'PACKER_BUILD_NAME') }}"
+
+    - name: display PACKER_HTTP_ADDR
+      debug:
+        msg: "http://{{ lookup('env', 'PACKER_HTTP_ADDR') }}"
